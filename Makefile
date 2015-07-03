@@ -1,5 +1,8 @@
 all: sdist
 
+upload: sdist
+	python setup.py sdist upload
+
 sdist:
 	python setup.py sdist
 
