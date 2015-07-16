@@ -1,4 +1,10 @@
-import cPickle
+try:
+    import cPickle
+except ImportError:
+    import pickle as cPickle
+
+
+__all__ = ['cachedfunc']
 
 
 class cachedfunc(object):
